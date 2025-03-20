@@ -4,11 +4,11 @@
     "slug": "AlanTuring",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/imgs/PC-Icon-Office-Graphics-7051486-1.jpg",
+    "icon": "./assets/Enigma-plugboard.jpg",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/imgs/PC-Icon-Office-Graphics-7051486-1.jpg",
+      "image": "./assets/Enigma-plugboard.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,12 +17,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/imgs/PC-Icon-Office-Graphics-7051486-1.jpg",
+        "foregroundImage": "./assets/Enigma-plugboard.jpg",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/imgs/4703650.png"
+      "favicon": "./assets/Enigma-plugboard.jpg"
     }
   }
 }
