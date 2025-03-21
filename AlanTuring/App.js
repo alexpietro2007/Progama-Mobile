@@ -1,5 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Image, Dimensions} from 'react-native';
+
+const {width, height} = Dimensions.get('screen')
 
 export default function App() {
   return (
@@ -72,7 +74,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   subtitle: {
-    fontSize: 65,
+    fontSize: width * 0.02,
     color: '#ecf0f1',
     fontStyle: 'italic',
   },
@@ -80,10 +82,10 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   text: {
-    fontSize: 60,
+    fontSize: width * 0.07,
     color: '#333',
     textAlign: 'justify',
-    lineHeight: 85,
+    lineHeight: width * 0.09,
     marginBottom: 40,
   },
 });
