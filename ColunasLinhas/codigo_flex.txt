@@ -1,0 +1,96 @@
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function App() {
+  return (
+
+    <View style={styles.container}>
+      
+      <View style={styles.linha}>
+        <View style={styles.coluna}>
+          <Text> Coluna 1 </Text>
+        </View>
+
+        <View style={styles.coluna}>
+          <Text> Coluna 2 </Text>
+        </View>
+      </View>       
+
+      <View style={styles.linha}>
+        <View style={styles.coluna}>
+          <Text> Coluna 1 </Text>
+        </View>
+
+        <View style={styles.coluna}>
+          <Text> Coluna 2 </Text>
+        </View>
+
+        <View style={styles.coluna}>
+          <Text> Coluna 3 </Text>
+        </View>
+
+        <View style={styles.coluna}>
+          <Text> Coluna 4 </Text>
+        </View>
+      </View>
+
+      <View style={styles.linha}>
+        <View style={styles.coluna}>
+          <Text> Coluna 1 </Text>
+        </View>
+
+        <View style={styles.coluna}>
+          <Text> Coluna 2 </Text>
+        </View>
+
+        <View style={styles.coluna}>
+          <Text> Coluna 3 </Text>
+        </View>        
+      </View>
+
+      <View style={styles.linha}>
+        <View style={styles.coluna}>
+          <Text> Coluna 1 </Text>
+        </View>
+      </View>
+
+      <View style={styles.linha}>
+        <View style={styles.coluna}>
+          <Text> Coluna 1 </Text>
+        </View>
+
+        <View style={styles.coluna}>
+          <Text> Coluna 2 </Text>
+        </View>
+
+        <View style={styles.coluna}>
+          <Text> Coluna 3 </Text>
+        </View>
+      </View>
+ 
+      
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#000',
+    flexDirection:'column',        
+  },
+
+  linha:{
+    flex: 1,
+    backgroundColor: '#000',
+    flexDirection:'row',        
+  },
+
+  coluna:{    
+    width:100,    
+    height:100,
+    backgroundColor:'#f00',
+    marginLeft:10,
+    marginBottom:10,     
+    flex:1
+  }
+});
