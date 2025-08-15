@@ -1,0 +1,224 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View,ScrollView } from 'react-native';
+
+import Ionicons from '@expo/vector-icons/Ionicons';
+
+export default function App() {
+  return (
+    <ScrollView>     
+
+      <View style={styles.containerFundo}>
+        <Text style={styles.tituloTela}>
+          Exemplo com Ícones
+        </Text>
+      </View>
+
+      <View style={styles.container}>        
+ 
+        <View style={styles.linha}>
+          <View style={styles.viewIcone}>
+            <View style={[styles.circulo,styles.corFundo1]}>
+              <Ionicons name="logo-apple" size={32} color="white" />
+            </View>
+            
+            <Text style={styles.textoIcone}> Apple </Text>
+          </View>
+
+          <View style={styles.viewIcone}>
+            <View style={[styles.circulo,styles.corFundo2]}>
+              <Ionicons name="logo-react" size={32} color="white" />
+            </View>            
+            <Text style={styles.textoIcone}>React</Text>            
+          </View>
+
+          <View style={styles.viewIcone}>
+           <View style={[styles.circulo,styles.corFundo3]}>
+              <Ionicons name="logo-android" size={32} color="white" />
+            </View>            
+            <Text style={styles.textoIcone}>Android</Text>
+          </View>
+        </View> 
+   
+        <View style={styles.linha}>
+            <View style={styles.viewIcone}>
+            <View style={[styles.circulo,styles.corFundo4]}>
+                <Ionicons name="logo-docker" size={32} color="white" />
+              </View>
+              
+              <Text style={styles.textoIcone}>Docker</Text>
+            </View>
+
+            <View style={styles.viewIcone}>
+              <View style={[styles.circulo,styles.corFundo5]}>
+                <Ionicons name="logo-amazon" size={32} color="white" />
+              </View>            
+              <Text style={styles.textoIcone}>Amazon</Text>            
+            </View>
+
+            <View style={styles.viewIcone}>
+              <View style={[styles.circulo,styles.corFundo6]}>
+                <Ionicons name="save" size={32} color="white" />
+              </View>            
+              <Text style={styles.textoIcone}> Salvar </Text>
+            </View>
+          </View> 
+
+          <View style={styles.linha}>
+            <View style={styles.viewIcone}>
+              <View style={[styles.circulo,styles.corFundo7]}>
+                <Ionicons name="refresh" size={32} color="white" />
+              </View>
+              
+              <Text style={styles.textoIcone}> Atualizar </Text>
+            </View>
+
+            <View style={styles.viewIcone}>
+              <View style={[styles.circulo,styles.corFundo8]}>
+                <Ionicons name="cash" size={32} color="white" />
+              </View>            
+              <Text style={styles.textoIcone}> Dinheiro </Text>            
+            </View>
+
+            <View style={styles.viewIcone}>
+              <View style={[styles.circulo,styles.corFundo9]}>
+                <Ionicons name="logo-facebook" size={32} color="white" />
+              </View>            
+              <Text style={styles.textoIcone}> Facebook </Text>
+            </View>
+          </View>
+
+          <View style={styles.container}>
+            <View style={[styles.linha,styles.linhaIconeTexto]}>
+              <Text>
+                <Ionicons name="navigate" size={20} color="#15247cff" />                
+              </Text>
+              <Text style={styles.textoEnderecao}>
+                Rua lorem número 100  
+              </Text>
+            </View>
+
+            <View style={[styles.linha,styles.linhaIconeTexto]}>
+              <Text>
+                <Ionicons name="mail" size={20} color="#15247cff" />                
+              </Text>
+              <Text style={styles.textoEnderecao}>
+                email@provedor.com
+              </Text>
+            </View>
+
+            <View style={[styles.linha,styles.linhaIconeTexto]}>
+              <Text>
+                <Ionicons name="phone-portrait" size={20} color="#15247cff" />                
+              </Text>
+              <Text style={styles.textoEnderecao}>
+                (11)11111-1111
+              </Text>
+            </View>
+          </View>
+
+        </View>
+
+        <StatusBar style="auto" />
+      
+     </ScrollView>
+  );
+}
+
+const styles = StyleSheet.create({
+  
+  containerFundo:{
+    backgroundColor:'#15247cff',
+    paddingTop:30,
+    paddingBottom:30
+  },
+
+  tituloTela:{
+    color:'#fff',
+    fontSize:30,
+    paddingLeft:'17%'
+  },
+
+  container:{
+    flex: 1,
+    width:'100%',    
+    justifyContent:'center',
+    alignItems:'center', 
+    backgroundColor:'#ffffff'   
+  },
+
+  linha:{
+    //backgroundColor:'#ff0',
+    flex: 1,
+    width:'80%',
+    flexDirection:'row',
+    justifyContent:'space-around',
+    alignItems:'center',
+    marginTop:20,
+    marginBottom:20
+  },
+
+  linhaIconeTexto:{
+    justifyContent:'flex-start',
+  },
+
+  viewIcone:{    
+    alignItems:'center',    
+    justifyContent:'center',   
+  },
+
+  circulo:{    
+    alignItems:'center',    
+    justifyContent:'center',
+    borderRadius:70,
+    width:70,
+    height:70,
+    backgroundColor:'#198306'
+  },
+
+  corFundo1:{
+    backgroundColor:'#4ad6e5'
+  },
+
+  corFundo2:{
+    backgroundColor:'#f9a21b'
+  },
+
+  corFundo3:{
+    backgroundColor:'#dd3b3bff'
+  },
+
+  corFundo4:{
+    backgroundColor:'#db2db6ff'
+  },
+
+  corFundo5:{
+    backgroundColor:'#21135fff'
+  },
+
+  corFundo6:{
+    backgroundColor:'#18b86dff'
+  },
+
+  corFundo7:{
+    backgroundColor:'#4f0970ff'
+  },
+
+  corFundo8:{
+    backgroundColor:'#213d99ff'
+  },
+
+  corFundo9:{
+    backgroundColor:'#2135eeff'
+  },
+
+  textoIcone:{
+    textAlign:'center',
+    fontSize:15
+  },
+
+  textoEnderecao:{
+    marginLeft:10,
+    color:'#15247cff'
+  }
+
+});
