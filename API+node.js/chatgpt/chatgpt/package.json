@@ -1,0 +1,38 @@
+{
+  "license": "0BSD",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.1.0",
+    "@google/genai": "^1.20.0",
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "expo-status-bar": "~2.2.3",
+    "express": "^5.1.0",
+    "openai": "^5.23.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.4",
+    "react-native-paper": "4.9.2",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@expo/cli": "^54.0.8",
+    "expo": "^54.0.10",
+    "metro": "^0.83.2"
+  },
+  "private": true,
+  "name": "chatgpt",
+  "description": "Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": ""
+}
